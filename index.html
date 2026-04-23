@@ -294,7 +294,30 @@
     .step p {
       font-size: 14px;
       color: var(--text-2);
-      margin: 0;
+      margin: 0 0 16px;
+    }
+    .step-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      padding: 8px 12px;
+      border: 1px solid rgba(34,211,238,0.35);
+      border-radius: 8px;
+      background: rgba(34,211,238,0.06);
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+    .step-link:hover {
+      background: rgba(34,211,238,0.15);
+      color: var(--secondary);
+    }
+    .step-note {
+      display: block;
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
     }
 
     /* ── CTA band ── */
@@ -421,23 +444,28 @@
   <section>
     <div class="container">
       <span class="section-label">How testing works</span>
-      <h2>Three steps to get started</h2>
+      <h2>Two steps to get QuickFeed</h2>
       <p class="section-lead">
-        You'll join our tester list, opt in on Google Play, and start receiving the app like any other Play Store install.
+        Join the group, then download the app from Google Play. That's it.
       </p>
 
       <div class="steps">
         <div class="step">
-          <h3>Join the group</h3>
-          <p>Click the button below to join the QuickFeed testers Google Group. This adds your Google account to our closed-test roster.</p>
+          <h3>Join the Google Group</h3>
+          <p>Add your Google account to the QuickFeed testers list so Google Play knows you're approved.</p>
+          <a class="step-link" href="https://groups.google.com/g/quickfeed-testers" target="_blank" rel="noopener">
+            Join the Group
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+          </a>
         </div>
         <div class="step">
-          <h3>Opt in on Google Play</h3>
-          <p>Once you're in the group, you'll get a Play Store opt-in link. Tap it on your Android phone to become a tester.</p>
-        </div>
-        <div class="step">
-          <h3>Install & explore</h3>
-          <p>QuickFeed will appear in the Play Store for your account. Install, use it, and send us your thoughts. Every bit of feedback helps.</p>
+          <h3>Download the app</h3>
+          <p>On your Android phone, open the tester link, tap "Become a tester," then install QuickFeed from the Play Store.</p>
+          <a class="step-link" href="https://play.google.com/apps/testing/com.quickfeed.app" target="_blank" rel="noopener">
+            Download on Google Play
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+          </a>
+          <span class="step-note">Open this step on your Android device.</span>
         </div>
       </div>
     </div>
@@ -448,11 +476,16 @@
       <div class="cta-band">
         <span class="section-label">Ready when you are</span>
         <h2>Become a QuickFeed tester</h2>
-        <p>Join our Google Group to get access to the closed test. It only takes a moment, and you can leave anytime.</p>
-        <a class="btn btn-primary btn-lg" href="https://groups.google.com/g/quickfeed-testers" target="_blank" rel="noopener">
-          Join Closed Testing
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
-        </a>
+        <p>Two quick steps and you're in. Start with the group, then grab the app on Google Play.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary btn-lg" href="https://groups.google.com/g/quickfeed-testers" target="_blank" rel="noopener">
+            Step 1: Join the Group
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="https://play.google.com/apps/testing/com.quickfeed.app" target="_blank" rel="noopener">
+            Step 2: Download the App
+          </a>
+        </div>
         <div class="fineprint">
           Prefer email? Send a blank message to
           <a href="mailto:quickfeed-testers+subscribe@googlegroups.com">quickfeed-testers+subscribe@googlegroups.com</a>.
